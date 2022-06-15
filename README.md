@@ -1,13 +1,12 @@
 # SpringBootProject-MuseMarket
-스프링 부트 + html_예술 중고 거래 사이트
+SpringBoot + html + thymeleaf + Oracle : 예술 중고 거래 사이트
 
 
 ## 🖥️ 프로젝트 소개
-'중고나라'를 벤치마킹하여 만든 중고 거래 사이트
-<br>
+'중고나라'를 벤치마킹한 중고 거래 사이트
 
 ## 🕰️ 개발 기간
-* 22.04.26일 - 22.05.24일
+22.04.28 - 22.05.24 ( 4주 )
 
 ### 🧑‍🤝‍🧑 맴버구성
  - 팀원1 : 왕혜민 - 상품 페이지, Ajax 댓글 구현, 마이페이지 회원 정보, Database Script 제작, 전체 통합
@@ -18,32 +17,44 @@
 
 ### ⚙️ 개발 환경
 - `Java 8`
-- `JDK 1.8.0`
 - **IDE** : STS 3.9
 - **Framework** : Springboot(2.x)
 - **Database** : Oracle DB(11xe)
 - **ORM** : Mybatis
 
 ## 📌 주요 기능
-#### 로그인 - <a href="https://github.com/chaehyuenwoo/SpringBoot-Project-MEGABOX/wiki/%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5-%EC%86%8C%EA%B0%9C(Login)" >상세보기 - WIKI 이동</a>
+
+#### 메인 페이지 - <a href="" >상세보기 - WIKI 이동</a>
+- BootStrap을 활용한 화면 구현
+- 메인 로고 디자인 및 관련 포스터 이미지(CSS)
+
+#### 로그인 - <a href="" >상세보기 - WIKI 이동</a>
 - DB값 검증
 - ID찾기, PW찾기
-- 로그인 시 쿠키(Cookie) 및 세션(Session) 생성
-#### 회원가입 - <a href="https://github.com/chaehyuenwoo/SpringBoot-Project-MEGABOX/wiki/%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5-%EC%86%8C%EA%B0%9C(Member)" >상세보기 - WIKI 이동</a>
-- 주소 API 연동
-- ID 중복 체크
-#### 마이 페이지 - <a href="https://github.com/chaehyuenwoo/SpringBoot-Project-MEGABOX/wiki/%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5-%EC%86%8C%EA%B0%9C(Member)" >상세보기 - WIKI 이동</a>
-- 주소 API 연동
-- 회원정보 변경
+- 로그인 시 세션(Session) 생성
 
-#### 영화 예매 - <a href="https://github.com/chaehyuenwoo/SpringBoot-Project-MEGABOX/wiki/%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5-%EC%86%8C%EA%B0%9C(%EC%98%81%ED%99%94-%EC%98%88%EB%A7%A4)" >상세보기 - WIKI 이동</a>
-- 영화 선택(날짜 지정)
-- 영화관 선택(대분류/소분류 선택) 및 시간 선택
-- 좌석 선택
-- 결제 페이지
-- 예매 완료
-#### 메인 페이지 - <a href="https://github.com/chaehyuenwoo/SpringBoot-Project-MEGABOX/wiki/%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5-%EC%86%8C%EA%B0%9C(%EB%A9%94%EC%9D%B8-Page)" >상세보기 - WIKI 이동</a>
-- YouTube API 연동
-- 메인 포스터(영화) 이미지 슬라이드(CSS)
-#### 1대1문의 및 공지사항 - <a href="" >상세보기 - WIKI 이동</a> 
+#### 회원가입 - <a href="" >상세보기 - WIKI 이동</a>
+- ID 중복 체크
+- 비밀번호 재확인  
+
+#### 마이 페이지 - <a href="" >상세보기 - WIKI 이동</a>
+- 회원정보 변경
+- 해당회원 판매물품, 찜, 댓글, 커뮤니티 등 확인 및 해당 사이트로 이동 
+
+#### 상품목록 리스트 - <a href="" >상세보기 - WIKI 이동</a>
+- 전체 판매 물품 리스트
+- 특정 판매 물품 리스트 확인 가능
+- BootStrap 활용한 화면 구현
+
+#### 상품 상세 내역 - <a href="" >상세보기 - WIKI 이동</a>
+- 해당 물품 상세 정보
+- 대표 이미지 및 상세 이미지 업로드
+- Ajax를 사용한 비동기 댓글 프로그래밍 구현
+- 찜수, 댓글수, 조회수 반영
+
+#### 커뮤니티 - <a href="" >상세보기 - WIKI 이동</a> 
 - 글 작성, 읽기, 수정, 삭제(CRUD)
+- Ajax를 사용한 비동기 댓글 프로그래밍 구현
+
+#### 1:1 문의 - <a href="" >상세보기 - WIKI 이동</a> 
+- 글 작성 후 Master 계정만 확인 가능
