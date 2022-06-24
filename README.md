@@ -29,7 +29,7 @@ SpringBoot + html + thymeleaf + Oracle : 예술 중고 거래 사이트
 - 로그인  : DB값 검증, 로그인 시 세션(Session) 생성 
 - ID찾기, PW찾기
 
-#### 상품리스트 및 상세 내역 - <a href="" >상세보기 - WIKI 이동</a>
+#### 상품리스트 및 상세 내역 - <a href="https://github.com/Wanghyemin/SpringBootProject-MuseMarket/wiki/%EC%83%81%ED%92%88%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EB%B0%8F-%EC%83%81%EC%84%B8-%EB%82%B4%EC%97%AD" >상세보기 - WIKI 이동</a>
 - 상품리스트 : 요청에 따른 상품리스트 추출, BootStrap 활용한 화면 구현
 - 상세 내역 : 해당 상품에 대한 데이터 추출, Ajax를 사용한 비동기 댓글 프로그래밍 구현
 
