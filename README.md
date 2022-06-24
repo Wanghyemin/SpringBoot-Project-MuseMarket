@@ -24,7 +24,8 @@ SpringBoot + html + thymeleaf + Oracle : 예술 중고 거래 사이트
 
 ## 📌 주요 기능
 
-#### 회원가입 및 로그인 - <a href="" >상세보기 - WIKI 이동</a>
+#### 회원가입 및 로그인 - <a href="https://github.com/Wanghyemin/SpringBootProject-MuseMarket/wiki/%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85-%EB%B0%8F-%EB%A1%9C%EA%B7%B8%EC%9D%B8
+" >상세보기 - WIKI 이동</a>
 - 회원가입 : ID 중복 체크 및 비밀번호 재확인 
 - 로그인  : DB값 검증, 로그인 시 세션(Session) 생성 
 - ID찾기, PW찾기
@@ -33,10 +34,11 @@ SpringBoot + html + thymeleaf + Oracle : 예술 중고 거래 사이트
 - 상품리스트 : 요청에 따른 상품리스트 추출, BootStrap 활용한 화면 구현
 - 상세 내역 : 해당 상품에 대한 데이터 추출, Ajax를 사용한 비동기 댓글 프로그래밍 구현
 
-#### 마이 페이지 - <a href="" >상세보기 - WIKI 이동</a>
+#### 마이 페이지 - <a href="https://github.com/Wanghyemin/SpringBootProject-MuseMarket/wiki/%EB%A7%88%EC%9D%B4-%ED%8E%98%EC%9D%B4%EC%A7%80
+" >상세보기 - WIKI 이동</a>
 - 회원정보 변경
 - 해당회원 판매물품, 찜, 댓글, 커뮤니티 등 확인
 
-#### 커뮤니티 및 1:1 문의 - <a href="" >상세보기 - WIKI 이동</a> 
+#### 커뮤니티 및 1:1 문의 - <a href="https://github.com/Wanghyemin/SpringBootProject-MuseMarket/wiki/%EC%BB%A4%EB%AE%A4%EB%8B%88%ED%8B%B0-%EB%B0%8F-1:1-%EB%AC%B8%EC%9D%98" >상세보기 - WIKI 이동</a> 
 - 커뮤니티 : 글 작성, 읽기, 수정, 삭제(CRUD)
 - 1:1 문의 : 회원작성, 특정 계정만 확인 가능하도록 접근제한
