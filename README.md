@@ -1,4 +1,4 @@
-# SpringBootProject-MuseMarket
+# Final Project-MuseMarket
 SpringBoot + html + thymeleaf + Oracle : 예술 중고 거래 사이트
 
 
