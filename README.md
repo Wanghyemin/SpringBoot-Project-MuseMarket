@@ -1,26 +1,31 @@
-# Final Project-MuseMarket
+# Final Project - MuseMarket
 SpringBoot + html + thymeleaf + Oracle : 예술 중고 거래 사이트
-
+<br/><br/>
 
 ## 🖥️ 프로젝트 소개
-'중고나라'를 벤치마킹한 '예술 중고 거래 사이트 : Muse Market'입니다.
+**예술 중고 거래 사이트 : Muse Market**입니다. 
+
+<br/><br/>
 
 ## 🕰️ 개발 기간
 22.04.28 - 22.05.24 ( 4주 )
+<br/><br/>
 
-### 🧑‍🤝‍🧑 맴버구성
+## 🧑‍🤝‍🧑 맴버구성
  - 팀원1 : 왕혜민 - 상품 페이지, Ajax 댓글 구현, 마이페이지 회원 정보, Database Script 제작, 전체 통합
  - 팀원2 : 이나영 - 커뮤니티 게시판(CRUD), 1:1문의, 공지사항, 전체 통합
  - 팀원3 : 박가윤 - 메인 페이지, 상품 리스트, 상품 등록, CSS, BootStrap
  - 팀원4 : 남승은 - 마이페이지 회원정보 수정, BootStrap
  - 팀원5 : 이세리 - 로그인, 회원가입, ID찾기, PW찾기
+<br/><br/>
 
-### ⚙️ 개발 환경
+## ⚙️ 개발 환경
 - `Java 8`
 - **IDE** : STS 3.9
 - **Framework** : Springboot(2.x)
 - **Database** : Oracle DB(11xe)
 - **ORM** : Mybatis
+<br/>
 
 ## 📌 주요 기능
 
