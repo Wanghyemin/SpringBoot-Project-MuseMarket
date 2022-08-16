@@ -1,15 +1,15 @@
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <header th:fragment="header" id="header">
+
+	<!-- header_top : 상단 회색 바 부분 -->
 	<div class="header_top">
-		<!--header_top-->
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-6">
 					<div class="contactinfo">
 						<ul class="nav nav-pills">
 							<li><a href="#"><i class="fa fa-phone"></i> +82 123 1234</a></li>
-							<li><a href="#"><i class="fa fa-envelope"></i>
-									info@muse.com</a></li>
+							<li><a href="#"><i class="fa fa-envelope"></i> info@muse.com</a></li>
 						</ul>
 					</div>
 				</div>
@@ -27,153 +27,97 @@
 			</div>
 		</div>
 	</div>
-	<!--/header_top-->
+	<!-- header_top : 상단 회색 바 부분 -->
 
+	<!-- header_middle : MuseMarket Logo 라인 부분 -->
 	<div class="header-middle">
-		<!--header-middle-->
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-4">
 					<div class="logo pull-left">
-						<a th:href="@{index.action}"><img
-							src=" images/home/logo_6.png" /></a>
+						<a th:href="@{index.action}"><img src=" images/home/logo_6.png" /></a>
 					</div>
-
 				</div>
 				<div class="col-sm-8">
 					<div class="shop-menu pull-right">
 						<ul class="nav navbar-navr">
 							<li th:if="${session.login != null}">
-								<div
-									th:text="${session.login.getUserName() + ((session.login.getUserId()))} + '�� ȯ���մϴ�'"></div>
+								<div th:text="${session.login.getUserName() + ((session.login.getUserId()))} + '님 환영합니다'"></div>
 							</li>
 						</ul>
 					</div>
 				</div>
-
 				<div class="col-sm-8">
 					<div class="shop-menu pull-right">
 						<ul class="nav navbar-navr">
 
-							<li><a th:if="${session.login != null}"
-								th:href="@{mypage.action}"> <i class="fa fa-user"></i>
-									MyPage
-							</a></li>
+							<li>
+								<a th:if="${session.login == null}" th:href="@{loginForm.action}"><i class="fa fa-user"></i>MyPage</a>
+								<a th:if="${session.login != null}" th:href="@{mypage.action}"><i class="fa fa-user"></i>MyPage</a>
+							</li>
+							<li>
+								<a th:if="${session.login == null}" th:href="@{signupForm.action}"><i class="fa fa-user"></i>Wishlist</a>
+								<a th:if="${session.login != null}" th:href="@{mypage.action}"><i class="fa fa-star"></i>Wishlist</a>
+							</li>
+							<li>
+								<a th:if="${session.login == null}" th:href="@{signupForm.action}"><i class="fa fa-user"></i>Join</a>
+								<a th:if="${session.login != null}" th:href="@{upload.action}"><i class="fa fa-pencil-square"></i>Write</a>
+							</li>
+							<li>
+								<a th:if="${session.login == null}" th:href="@{loginForm.action}"><i class="fa fa-lock"></i>Login</a>
+								<a th:if="${session.login != null}" th:href="@{logout.action}"><i class="fa fa-unlock"></i>Logout</a>
+							</li>
+							<li></li>
 
-							<li><a th:if="${session.login == null}"
-								th:href="@{loginForm.action}"><i class="fa fa-user"></i>
-									MyPage</a></li>
-
-							<li><a href="#"><i class="fa fa-star"></i> Wishlist</a></li>
-
-							<li><a th:if="${session.login == null}"
-								th:href="@{signupForm.action}"><i class="fa fa-user"></i>Join</a></li>
-
-							<li><a th:if="${session.login != null}"
-								th:href="@{upload.action}"><i class="fa fa-pencil-square"></i>Write</a></li>
-							<li><a th:if="${session.login == null}"
-								th:href="@{loginForm.action}"><i class="fa fa-lock"></i>Login</a></li>
-							<li><a th:if="${session.login != null}"
-								th:href="@{logout.action}"><i class="fa fa-unlock"></i>Logout</a></li>
-							<li><div th:if="${session.login != null}"></div></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!--/header-middle-->
+	<!-- header_middle : MuseMarket Logo 라인 부분 -->
 
+	<!-- header-bottom : 가로로 되어있는 Navigation Bar -->
 	<div class="header-bottom">
-		<!--header-bottom-->
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-9">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse"
-							data-target=".navbar-collapse">
-							<span class="sr-only">Toggle navigation</span> <span
-								class="icon-bar"></span> <span class="icon-bar"></span> <span
-								class="icon-bar"></span>
-						</button>
-					</div>
 					<div class="mainmenu pull-left">
 						<ul class="nav navbar-nav collapse navbar-collapse">
-							<li><a th:href="@{index.action}" class="active">Home</a></li>
-							<li class="dropdown"><a th:if="${session.login != null}"
-								th:href="@{shop.action}">Purchase<i class="fa fa-angle-down"></i></a>
+							<li>
+								<a th:href="@{index.action}" class="active">Home</a>
+							</li>
+							<li class="dropdown">
+								<a th:if="${session.login == null}" th:href="@{loginForm.action}">Purchase</a>
+								<a th:unless="${session.login == null}" th:href="@{shop.action}">Purchase<i class="fa fa-angle-down"></i></a>
 								<ul role="menu" class="sub-menu">
-									<li><a
-										href="http://localhost:8090/selecshop.action?prodSelect=poster">POSTER</a></li>
-									<li><a
-										href="http://localhost:8090/selecshop.action?prodSelect=FIGURE">FIGURE</a></li>
-									<li><a
-										href="http://localhost:8090/selecshop.action?prodSelect=GOODS">GOODS</a></li>
-									<li><a
-										href="http://localhost:8090/selecshop.action?prodSelect=ETC">ETC</a></li>
-
-									<li><a
-										href="http://localhost:8090/selecshop.action?prodSelect=LP">LP
-									</a></li>
-									<li><a
-										href="http://localhost:8090/selecshop.action?prodSelect=VIDEOS">VIDEOS
-									</a></li>
-									<li><a
-										href="http://localhost:8090/selecshop.action?prodSelect=TAPE">TAPE
-									</a></li>
-									<li><a
-										href="http://localhost:8090/selecshop.action?prodSelect=CD/DVD">CD/DVD</a></li>
-									<li><a
-										href="http://localhost:8090/selecshop.action?prodSelect=INSTRUMENT">INSTRUMENT
-									</a></li>
-								</ul></li>
-							<li class="dropdown"><a th:unless="${session.login != null}"
-								th:href="@{loginForm.action}">Purchase<i
-									class="fa fa-angle-down"></i></a>
-								<ul role="menu" class="sub-menu">
-									<li><a
-										href="http://localhost:8090/selecshop.action?prodSelect=poster">POSTER</a></li>
-									<li><a
-										href="http://localhost:8090/selecshop.action?prodSelect=FIGURE">FIGURE</a></li>
-									<li><a
-										href="http://localhost:8090/selecshop.action?prodSelect=GOODS">GOODS</a></li>
-									<li><a
-										href="http://localhost:8090/selecshop.action?prodSelect=ETC">ETC</a></li>
-
-									<li><a
-										href="http://localhost:8090/selecshop.action?prodSelect=LP">LP
-									</a></li>
-									<li><a
-										href="http://localhost:8090/selecshop.action?prodSelect=VIDEOS">VIDEOS
-									</a></li>
-									<li><a
-										href="http://localhost:8090/selecshop.action?prodSelect=TAPE">TAPE
-									</a></li>
-									<li><a
-										href="http://localhost:8090/selecshop.action?prodSelect=CD/DVD">CD/DVD</a></li>
-									<li><a
-										href="http://localhost:8090/selecshop.action?prodSelect=INSTRUMENT">INSTRUMENT
-									</a></li>
-								</ul></li>
+									<li><a href="http://localhost:8090/selecshop.action?prodSelect=poster">POSTER</a></li>
+									<li><a href="http://localhost:8090/selecshop.action?prodSelect=figure">FIGURE</a></li>
+									<li><a href="http://localhost:8090/selecshop.action?prodSelect=goods">GOODS</a></li>
+									<li><a href="http://localhost:8090/selecshop.action?prodSelect=etc">ETC</a></li>
+									<li><a href="http://localhost:8090/selecshop.action?prodSelect=lp">LP</a></li>
+									<li><a href="http://localhost:8090/selecshop.action?prodSelect=videos">VIDEOS</a></li>
+									<li><a href="http://localhost:8090/selecshop.action?prodSelect=tape">TAPE</a></li>
+									<li><a href="http://localhost:8090/selecshop.action?prodSelect=cd">CD/DVD</a></li>
+									<li><a href="http://localhost:8090/selecshop.action?prodSelect=instrument">INSTRUMENT</a></li>
+								</ul>
+							</li>
 							<li><a href="http://localhost:8090/list.action">Community</a></li>
-
-							<li class="dropdown"><a th:href="@{qa_contact.action}">Contact<i
-									class="fa fa-angle-down"></i></a>
+							<li class="dropdown"><a th:href="@{qa_contact.action}">Contact<i class="fa fa-angle-down"></i></a>
 								<ul role="menu" class="sub-menu">
 									<li><a th:href="@{master_list.action}">Q & A</a></li>
 									<li><a th:href="@{qa_contact.action}">Contact 1:1</a></li>
-								</ul></li>
-							<li><a th:if="${session.login != null}"
-								th:href="@{upload.action}">Write</a></li>
-							<li><a th:unless="${session.login != null}"
-								th:href="@{loginForm.action}">Write</a></li>
+								</ul>
+							</li>
+							<li>
+								<a th:if="${session.login == null}" th:href="@{loginForm.action}">Write</a>
+								<a th:unless="${session.login != null}" th:href="@{upload.action}">Write</a>
+							</li>
 						</ul>
 					</div>
 				</div>
-
 			</div>
 		</div>
 	</div>
-	<!--/header-bottom-->
+	<!-- header-bottom : 가로로 되어있는 Navigation Bar -->
 </header>
-<!--/header-->
