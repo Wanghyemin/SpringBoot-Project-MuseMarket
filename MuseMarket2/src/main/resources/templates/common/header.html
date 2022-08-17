@@ -105,13 +105,13 @@
 							<li><a href="http://localhost:8090/list.action">Community</a></li>
 							<li class="dropdown"><a th:href="@{qa_contact.action}">Contact<i class="fa fa-angle-down"></i></a>
 								<ul role="menu" class="sub-menu">
-									<li><a th:href="@{master_list.action}">Q & A</a></li>
 									<li><a th:href="@{qa_contact.action}">Contact 1:1</a></li>
+									<li><a th:href="@{master_list.action}">Q & A</a></li>
 								</ul>
 							</li>
 							<li>
 								<a th:if="${session.login == null}" th:href="@{loginForm.action}">Write</a>
-								<a th:unless="${session.login != null}" th:href="@{upload.action}">Write</a>
+								<a th:unless="${session.login == null}" th:href="@{upload.action}">Write</a>
 							</li>
 						</ul>
 					</div>
