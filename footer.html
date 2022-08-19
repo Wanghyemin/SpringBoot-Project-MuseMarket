@@ -1,0 +1,138 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<footer id="footer">
+
+	<!-- footer_top : 우리 사진 있는 부분 -->
+	<div class="footer-top">
+		<div class="container">
+			<div class="row">
+				<!-- 뮤즈마켓 타이틀 -->
+				<div class="col-sm-2">
+					<div class="companyinfo">
+						<h2><span>Muse</span>-Market</h2>
+						<p>Muse Market is a luxurious online market where you can trade art and music related products secondhand.</p>
+					</div>
+				</div>
+				<!-- 우리 이미지 부분 -->
+				<div class="col-sm-7" style="width: 975px;">
+					<div class="col-sm-3">
+						<div class="video-gallery text-center">
+							<div class="iframe-img"><img src="images/sample/l.png" alt="" /></div>
+							<p>NY.Lee</p>
+							<h2>14 06 1997</h2>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="video-gallery text-center">
+							<div class="iframe-img"><img src="images/sample/w.png" alt="" /></div>
+							<p>HM.WANG</p>
+							<h2>28 09 1995</h2>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="video-gallery text-center">
+							<div class="iframe-img"><img src="images/sample/y.png" alt="" /></div>
+							<p>SR.YANG</p>
+							<h2>03 08 1987</h2>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="video-gallery text-center">
+							<div class="iframe-img"><img src="images/sample/n.png" alt="" /></div>
+							<p>SE.NAM</p>
+							<h2>14 03 1997</h2>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="video-gallery text-center">
+							<div class="iframe-img"><img src="images/sample/p.png" alt="" /></div>
+							<p>GY.PARK</p>
+							<h2>28 01 1990</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- footer_top : 우리 사진 있는 부분 -->
+
+	<!-- footer_middle : 지도 이미지 있는 부분 -->
+	<div class="footer-widget">
+		<div class="container">
+			<div class="row">
+			<!-- 여기서부터 시작하기 !!!!!! -->
+				<div class="col-sm-2">
+					<div class="single-widget">
+						<h2>Service</h2>
+						<ul class="nav nav-pills nav-stacked">
+							<li><a th:href="@{index.action}">MuseMarket Homepage</a></li>
+							<li>
+								<a th:if="${session.login == null}" th:href="@{loginForm.action}">Online Help</a>
+								<a th:unless="${session.login == null}" th:href="@{master_list.action}">Online Help</a>
+							</li>
+							<li><a href="mailto:hyemin95928@naver.com">Contact JOJANG</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="single-widget">
+						<h2>Quick Shop</h2>
+						<ul class="nav nav-pills nav-stacked">
+							<li><a href="http://localhost:8090/selecshop.action?prodSelect=poster">POSTER</a></li>
+							<li><a href="http://localhost:8090/selecshop.action?prodSelect=figure">FIGURE</a></li>
+							<li><a href="http://localhost:8090/selecshop.action?prodSelect=goods">GOODS</a></li>
+							<li><a href="http://localhost:8090/selecshop.action?prodSelect=etc">ETC</a></li>
+							<li><a href="http://localhost:8090/selecshop.action?prodSelect=lp">LP</a></li>
+							<li><a href="http://localhost:8090/selecshop.action?prodSelect=videos">VIDEOS</a></li>
+							<li><a href="http://localhost:8090/selecshop.action?prodSelect=tape">TAPE</a></li>
+							<li><a href="http://localhost:8090/selecshop.action?prodSelect=cd">CD/DVD</a></li>
+							<li><a href="http://localhost:8090/selecshop.action?prodSelect=instrument">INSTRUMENT</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="single-widget">
+						<h2>Policies</h2>
+						<ul class="nav nav-pills nav-stacked">
+							<li><a href="@{master_list.action}">Terms of Use</a></li>
+							<li><a href="@{master_list.action}">Privecy Policy</a></li>
+							<li><a href="@{master_list.action}">Refund Policy</a></li>
+							<li><a href="@{master_list.action}">Billing System</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="single-widget">
+						<h2>About Muse Market</h2>
+						<ul class="nav nav-pills nav-stacked">
+							<li>Company Information</li>
+							<li>Careers</li>
+							<li>Store Location</li>
+							<li>Affillate Program</li>
+							<li>Copyright</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="address">
+						<img src="/images/home/map.png"/>
+						<p>3jo Luxurious Linas MuseMarket, Seoul</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- footer_middle : 지도 이미지 있는 부분 -->
+
+	<!-- footer_bottom : 하단 회색 바 부분 -->
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="row">
+				<p class="pull-left">Copyright © 2022 Muse-Market Inc. All rights reserved.</p>
+				<p class="pull-right">Designed by <span>3조</span>
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- footer_bottom : 하단 회색 바 부분 -->
+	
+</footer>
