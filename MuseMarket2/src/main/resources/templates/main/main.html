@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" layout:decorate="~{layout}">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Muse-Market</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/price-range.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    
+    <link rel="stylesheet" type="text/css" th:href="@{/css/mainindex.css}"> <!-- 메인인덱스 : 따로 나와있던 css -->
+</head><!--/head-->
+
+<body>
+
+<!-- ** 여기에 thymeleaf ** -->
+<!-- <div th:replace="~{common/header :: header}"></div> -->
+
+<div layout:fragment="content" ></div>
+
+	<div id="slider" >
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div id="slider-carousel" class="carousel slide" data-ride="carousel" style="width: 100%;">
+						<ol class="carousel-indicators">
+							<li data-target="#slider-carousel" data-slide-to="0" class="active"></li>
+							<li data-target="#slider-carousel" data-slide-to="1"></li>
+							<li data-target="#slider-carousel" data-slide-to="2"></li>
+							<li data-target="#slider-carousel" data-slide-to="3"></li>
+						</ol>
+						
+						
+						<div class="carousel-inner" style="width: 100%;">
+							<div class="item active">
+								
+								
+								<div class="">
+									<img src="images/home/slider1.png" class="girl img-responsive" alt="" />
+								</div>
+								
+								
+							</div>
+							<div class="item">
+								<div class="">
+									<img src="images/home/slider2.png" class="girl img-responsive" alt="" />
+
+								</div>
+							</div>
+							
+							<div class="item">
+								<div class="">
+									<img src="images/home/slider3.png" class="girl img-responsive" alt="" />
+								</div>
+							</div>
+							
+							<div class="item">
+								<div class="">
+									<img src="images/home/slider4.png" class="girl img-responsive" alt="" />
+								</div>
+							</div>
+						</div>
+						
+						<a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
+							<i class="fa fa-angle-left"></i>
+						</a>
+						<a href="#slider-carousel" class="right control-carousel hidden-xs" data-slide="next">
+							<i class="fa fa-angle-right"></i>
+						</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<!-- 	/slider -->
+	<section>
+		<div style="text-align: center;">
+			<h3>- Best deal review of the month -</h3>
+				<hr/>
+		</div>
+		
+							  <div class="container gal-container">
+							    <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
+							      <div class="box">
+							        <a href="#" data-toggle="modal" data-target="#1">
+							          <img src="images/sample/logo1.png">
+							        </a>
+							        <div class="modal fade" id="1" tabindex="-1" role="dialog">
+							          <div class="modal-dialog" role="document">
+							            <div class="modal-content">
+							                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+							              <div class="modal-body">
+							                <img src="images/sample/logo1.png">
+							              </div>
+							                <div class="col-md-12 description">
+							                  <h4>This is the first one on my Gallery</h4>
+							                </div>
+							            </div>
+							          </div>
+							        </div>
+							      </div>
+							    </div>
+							    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+							      <div class="box">
+							        <a href="#" data-toggle="modal" data-target="#2">
+							          <img src="images/sample/msample4.jpg">
+							        </a>
+							        <div class="modal fade" id="2" tabindex="-1" role="dialog">
+							          <div class="modal-dialog" role="document">
+							            <div class="modal-content">
+							                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+							              <div class="modal-body">
+							                <img src="images/sample/msample4.jpg">
+							              </div>
+							                <div class="col-md-12 description">
+							                  <h4>인테리어 소품으로 이용하려고 구매했습니다. 만족스럽게 사용중입니다.</h4>
+							                </div>
+							            </div>
+							          </div>
+							        </div>
+							      </div>
+							    </div>
+							    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+							      <div class="box">
+							        <a href="#" data-toggle="modal" data-target="#3">
+							          <img src="images/sample/msample2.jpg">
+							        </a>
+							        <div class="modal fade" id="3" tabindex="-1" role="dialog">
+							          <div class="modal-dialog" role="document">
+							            <div class="modal-content">
+							                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+							              <div class="modal-body">
+							                <img src="images/sample/msample2.jpg">
+							              </div>
+							                <div class="col-md-12 description">
+							                  <h4>음대 입시를 위해 구입한 클래식 피아노입니다. 너무 만족스럽게 사용중입니다.</h4>
+							                </div>
+							            </div>
+							          </div>
+							        </div>
+							      </div>
+							    </div>
+							    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+							      <div class="box">
+							        <a href="#" data-toggle="modal" data-target="#4">
+							          <img src="images/sample/msample1.jpg">
+							        </a>
+							        <div class="modal fade" id="4" tabindex="-1" role="dialog">
+							          <div class="modal-dialog" role="document">
+							            <div class="modal-content">
+							                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+							              <div class="modal-body">
+							                <img src="images/sample/msample1.jpg">
+							              </div>
+							                <div class="col-md-12 description">
+							                  <h4>클래식 기타 배워보고싶어서 샀습니다. 판매자분이 정말 친절하셨어요</h4>
+							                </div>
+							            </div>
+							          </div>
+							        </div>
+							      </div>
+							    </div>
+							    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+							      <div class="box">
+							        <a href="#" data-toggle="modal" data-target="#5">
+							          <img src="images/sample/sample1.jpg">
+							        </a>
+							        <div class="modal fade" id="5" tabindex="-1" role="dialog">
+							          <div class="modal-dialog" role="document">
+							            <div class="modal-content">
+							                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+							              <div class="modal-body">
+							                <img src="images/sample/sample1.jpg">
+							              </div>
+							                <div class="col-md-12 description">
+							                  <h4>벽이 심심해서 구입한 포스터입니다. 너무 예쁘게 잘 쓰고 있습니다.</h4>
+							                </div>
+							            </div>
+							          </div>
+							        </div>
+							      </div>
+							    </div>
+							    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+							      <div class="box">
+							        <a href="#" data-toggle="modal" data-target="#6">
+							          <img src="images/sample/sample10.jpg">
+							        </a>
+							        <div class="modal fade" id="6" tabindex="-1" role="dialog">
+							          <div class="modal-dialog" role="document">
+							            <div class="modal-content">
+							                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+							              <div class="modal-body">
+							                <img src="images/sample/sample10.jpg">
+							              </div>
+							                <div class="col-md-12 description">
+							                  <h4>취미로 그림을 그리고 싶어서 산 붓 입니다. 이런 고가의 붓을 이렇게 저렴한 가격에 사서 좋았습니다.</h4>
+							                </div>
+							            </div>
+							          </div>
+							        </div>
+							      </div>
+							    </div>
+							    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+							      <div class="box">
+							        <a href="#" data-toggle="modal" data-target="#7">
+							          <img src="images/sample/sample13.jpg">
+							        </a>
+							        <div class="modal fade" id="7" tabindex="-1" role="dialog">
+							          <div class="modal-dialog" role="document">
+							            <div class="modal-content">
+							                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+							              <div class="modal-body">
+							                <img src="images/sample/sample13.jpg">
+							              </div>
+							                <div class="col-md-12 description">
+							                  <h4>오랜만에 CD로 음악을 듣고싶어서 샀습니다.</h4>
+							                </div>
+							            </div>
+							          </div>
+							        </div>
+							      </div>
+							    </div>
+							    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+							      <div class="box">
+							        <a href="#" data-toggle="modal" data-target="#8">
+							          <img src="images/sample/sample9.jpg">
+							        </a>
+							        <div class="modal fade" id="8" tabindex="-1" role="dialog">
+							          <div class="modal-dialog" role="document">
+							            <div class="modal-content">
+							                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+							              <div class="modal-body">
+							                <img src="images/sample/sample9.jpg">
+							              </div>
+							                <div class="col-md-12 description">
+							                  <h4>할머니가 듣고싶어 하셨던 귀한 음반을 살수 있게 해주셔서 감사합니다.</h4>
+							                </div>
+							            </div>
+							          </div>
+							        </div>
+							      </div>
+							    </div>
+							    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+							      <div class="box">
+							        <a href="#" data-toggle="modal" data-target="#9">
+							          <img src="images/sample/sample11.jpg">
+							        </a>
+							        <div class="modal fade" id="9" tabindex="-1" role="dialog">
+							          <div class="modal-dialog" role="document">
+							            <div class="modal-content">
+							                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+							              <div class="modal-body">
+							                <img src="images/sample/sample11.jpg">
+							              </div>
+							                <div class="col-md-12 description">
+							                  <h4>커다란 캔버스에 작업하려고 샀습니다. 매우 만족합니다.</h4>
+							                </div>
+							            </div>
+							          </div>
+							        </div>
+							      </div>
+							    </div>
+							    <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
+							      <div class="box">
+							        <a href="#" data-toggle="modal" data-target="#10">
+							          <img src="images/sample/sample12.jpg">
+							        </a>
+							        <div class="modal fade" id="10" tabindex="-1" role="dialog">
+							          <div class="modal-dialog" role="document">
+							            <div class="modal-content">
+							                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+							              <div class="modal-body">
+							                <img src="images/sample/sample12.jpg">
+							              </div>
+							                <div class="col-md-12 description">
+							                  <h4>즐거운 작업 저렴하게 할수있게 만들어주셔서 감사합니다.</h4>
+							                </div>
+							            </div>
+							          </div>
+							        </div>
+							      </div>
+							    </div>
+							    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+							      <div class="box">
+							        <a href="#" data-toggle="modal" data-target="#11">
+							          <img src="images/sample/large.jpg">
+							        </a>
+							        <div class="modal fade" id="11" tabindex="-1" role="dialog">
+							          <div class="modal-dialog" role="document">
+							            <div class="modal-content">
+							                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+							              <div class="modal-body">
+							                <img src="images/sample/large.jpg">
+							              </div>
+							                <div class="col-md-12 description">
+							                  <h4>시장에서 구할수 없는 명반을 많이 보고 고를수 있어서 기뻤습니다.</h4>
+							                </div>
+							            </div>
+							          </div>
+							        </div>
+							      </div>
+							    </div>
+							    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+							      <div class="box">
+							        <a href="#" data-toggle="modal" data-target="#12">
+							          <img src="images/sample/sample16.jpg">
+							        </a>
+							        <div class="modal fade" id="12" tabindex="-1" role="dialog">
+							          <div class="modal-dialog" role="document">
+							            <div class="modal-content">
+							                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+							              <div class="modal-body">
+							                <img src="images/sample/sample16.jpg">
+							              </div>
+							                <div class="col-md-12 description">
+							                  <h4>정말 너무 예쁜 포스터 입니다.!</h4>
+							                </div>
+							            </div>
+							          </div>
+							        </div>
+							      </div>
+							    </div>
+							    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+							      <div class="box">
+							        <a href="#" data-toggle="modal" data-target="#13">
+							          <img src="images/sample/sample14.jpg">
+							        </a>
+							        <div class="modal fade" id="13" tabindex="-1" role="dialog">
+							          <div class="modal-dialog" role="document">
+							            <div class="modal-content">
+							                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+							              <div class="modal-body">
+							                <img src="images/sample/sample14.jpg">
+							              </div>
+							                <div class="col-md-12 description">
+							                  <h4>너무 만족합니다.</h4>
+							                </div>
+							            </div>
+							          </div>
+							        </div>
+							      </div>
+							    </div>
+							    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+							      <div class="box">
+							        <a href="#" data-toggle="modal" data-target="#14">
+							          <img src="images/sample/sample15.jpg">
+							        </a>
+							        <div class="modal fade" id="14" tabindex="-1" role="dialog">
+							          <div class="modal-dialog" role="document">
+							            <div class="modal-content">
+							                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+							              <div class="modal-body">
+							                <img src="images/sample/sample15.jpg">
+							              </div>
+							                <div class="col-md-12 description">
+							                  <h4>듣고싶었던 음반들을 대량으로 구입해서 기뻤습니다.</h4>
+							                </div>
+							            </div>
+							          </div>
+							        </div>
+							      </div>
+							    </div>
+							    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+							      <div class="box">
+							        <a href="#" data-toggle="modal" data-target="#15">
+							          <img src="images/sample/sample17.jpg">
+							        </a>
+							        <div class="modal fade" id="15" tabindex="-1" role="dialog">
+							          <div class="modal-dialog" role="document">
+							            <div class="modal-content">
+							                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+							              <div class="modal-body">
+							                <img src="images/sample/sample17.jpg">
+							              </div>
+							                <div class="col-md-12 description">
+							                  <h4>카페 인테리어와 찰떡입니다!</h4>
+							                </div>
+							            </div>
+							          </div>
+							        </div>
+							      </div>
+							    </div>
+							    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+							      <div class="box">
+							        <a href="#" data-toggle="modal" data-target="#16">
+							          <img src="images/sample/logo.jpg">
+							        </a>
+							        <div class="modal fade" id="16" tabindex="-1" role="dialog">
+							          <div class="modal-dialog" role="document">
+							            <div class="modal-content">
+							                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+							              <div class="modal-body">
+							                <img src="images/sample/logo.jpg">
+							              </div>
+							                <div class="col-md-12 description">
+							                  <h4>최고의 명반입니다! 덕분에 다시 들을수 있어서 기뻤습니다.!</h4>
+							                </div>
+							            </div>
+							          </div>
+							        </div>
+							      </div>
+							    </div>
+							  </div>
+							</section>
+	
+<div th:replace="~{common/footer :: footer}"></div>
+  
+    <script src=" js/jquery.js"></script>
+	<script src=" js/bootstrap.min.js"></script>
+	<script src=" js/jquery.scrollUp.min.js"></script>
+	<script src=" js/price-range.js"></script>
+    <script src=" js/jquery.prettyPhoto.js"></script>
+    <script src=" js/main.js"></script>
+    
+</body>
+</html>
