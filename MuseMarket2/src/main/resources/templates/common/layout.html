@@ -2,16 +2,18 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Hi</title>
 </head>
 <body>
 
-<!-- 안뜨는중.... 여기서부터 -->
+<!-- 전체 안씀.. -->
 
-<div th:replace="~{common/header :: header}"></div>
+<div th:replace="~{header :: headerFragment}"></div>
+<h1>hi</h1>
+<th:block layout:fragment="content"></th:block>
 
-<!-- <th:block layout:fragment="content"></th:block> -->
+<div th:replace="~{footer :: footer}"></div>
 
-<div th:replace="~{common/footer :: footer}"></div>
+<th:block layout:fragment="script"></th:block>
 </body>
 </html>

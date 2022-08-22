@@ -1,5 +1,5 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<header th:fragment="header" id="header">
+<header th:fragment="headerFragment" id="header">
 
 	<!-- header_top : 상단 회색 바 부분 -->
 	<div class="header_top">
@@ -90,7 +90,7 @@
 							<li class="dropdown">
 								<a th:if="${session.login == null}" th:href="@{loginForm.action}">Purchase</a>
 								<a th:unless="${session.login == null}" th:href="@{shop.action}">Purchase<i class="fa fa-angle-down"></i></a>
-								<ul role="menu" class="sub-menu">
+								<ul th:if="${session.login != null}" role="menu" class="sub-menu">
 									<li><a href="http://localhost:8090/selecshop.action?prodSelect=poster">POSTER</a></li>
 									<li><a href="http://localhost:8090/selecshop.action?prodSelect=figure">FIGURE</a></li>
 									<li><a href="http://localhost:8090/selecshop.action?prodSelect=goods">GOODS</a></li>
@@ -102,7 +102,9 @@
 									<li><a href="http://localhost:8090/selecshop.action?prodSelect=instrument">INSTRUMENT</a></li>
 								</ul>
 							</li>
-							<li><a href="http://localhost:8090/list.action">Community</a></li>
+							<li>
+								<a th:if="${session.login == null}" th:href="@{loginForm.action}">Community</a>
+								<a th:unless="${session.login == null}" th:href="@{list.action}">Community</a></li>
 							<li class="dropdown"><a th:href="@{qa_contact.action}">Contact<i class="fa fa-angle-down"></i></a>
 								<ul role="menu" class="sub-menu">
 									<li><a th:href="@{qa_contact.action}">Contact 1:1</a></li>
